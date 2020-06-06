@@ -1,0 +1,8 @@
+- como se hace un cache en pagina
+- como hago drag and drop
+- funcionalidad para buscar y autosugerir
+- funcionalidad para girar pokemon
+- funcion que permita buscar una imagen de un pokemon con opcion de numero, nombre y tipo de imagen
+
+
+--hay un bug en el boton accion porque si se cliquea rapido no agrega los event listener de manera apropiada

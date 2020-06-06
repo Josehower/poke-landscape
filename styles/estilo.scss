@@ -1,0 +1,26 @@
+.oculto {
+    display: none;
+}
+
+.pokemon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr ;
+    justify-items: center;
+}
+
+.pokeContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    height: 10vh;
+
+}
+
+.canvaContainer{
+    min-width: 90vw;
+    height: 70vh;
+    border: solid;
+    background-image: url(https://i.pinimg.com/originals/42/4a/d6/424ad6a3cf762c0c909bdd8385c9e5e6.jpg);
+    background-position: center;
+    background-size: cover;
+}
