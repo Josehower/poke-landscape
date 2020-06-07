@@ -1,4 +1,5 @@
 import { bench } from './pokeBenchState.js';
+// recieve a name or id of a pokemon already catched and returns his benchState
 
 function pokemonById(pokemonId) {
   const pokemonName = Object.entries(bench).filter(
@@ -8,4 +9,9 @@ function pokemonById(pokemonId) {
   return bench[pokemonName];
 }
 
-export { pokemonById };
+function getRandomPokemonNumber() {
+  const randomPokemonId = Math.floor(Math.random() * 806 + 1);
+  return randomPokemonId;
+}
+
+export { pokemonById, getRandomPokemonNumber };

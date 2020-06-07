@@ -69,6 +69,7 @@ async function catchPokemon(pokemonId) {
     // get the info from cache
     console.log(`we already have one ${pokemonById(pokemonId).name}`);
   }
+  return pokemonById(pokemonId);
 }
 
 export { catchPokemon };
