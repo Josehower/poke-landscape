@@ -1,8 +1,9 @@
-- como se hace un cache en pagina
-- como hago drag and drop
 - funcionalidad para buscar y autosugerir
-- funcionalidad para girar pokemon
-- funcion que permita buscar una imagen de un pokemon con opcion de numero, nombre y tipo de imagen
+- funcionalidad cambiar fondo
+-funcionalidad cambiar tamano en paisaje
 
 
---hay un bug en el boton accion porque si se cliquea rapido no agrega los event listener de manera apropiada
+
+background-image: 2 https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c08d530-29ab-442b-9b52-6ed6969f2bd7/d8i3udq-c83b045c-859b-4ef9-9023-cef58008b879.png/v1/fill/w_1024,h_576,q_80,strp/pokemon_landscape_by_brainblower_d8i3udq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzYiLCJwYXRoIjoiXC9mXC8yYzA4ZDUzMC0yOWFiLTQ0MmItOWI1Mi02ZWQ2OTY5ZjJiZDdcL2Q4aTN1ZHEtYzgzYjA0NWMtODU5Yi00ZWY5LTkwMjMtY2VmNTgwMDhiODc5LnBuZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.mG4so3zWL5RtmwCn32_Xs5jPZyzRcw_XEXyJABrr62A
+
+    background-image: url(https://i.pinimg.com/originals/42/4a/d6/424ad6a3cf762c0c909bdd8385c9e5e6.jpg);

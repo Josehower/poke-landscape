@@ -1,3 +1,5 @@
+import { pokemonInside } from './Landscape/insideLandscapeHandlers';
+
 function dragStart(e) {
   e.currentTarget.classList.add('taken');
 }
@@ -11,10 +13,11 @@ function dragOver(e) {
 function dragEnter(e) {
   e.preventDefault();
 }
-function onDrop() {
-  const pokemonName = document.querySelector('.taken').classList[0];
-  console.log(`${pokemonName} i choose you!`);
-  this.append(document.querySelector('.taken'));
+function onDrop(e) {
+  const pokemonDropped = document.querySelector('.taken');
+  this.append(pokemonDropped);
+  console.log(`${pokemonDropped.classList[0]} i choose you!`);
+  pokemonInside(pokemonDropped);
 }
 
 function mouseIn(e) {

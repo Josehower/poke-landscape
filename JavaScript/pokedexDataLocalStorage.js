@@ -9,6 +9,10 @@ function sortSprites({ sprites, name }) {
       if (spriteId.includes('female')) {
         bench[name].state.warning = 'No female';
       }
+      if (spriteId.includes('back') && spriteId.includes('default')) {
+        bench[name].state.warning2 = 'No back';
+      }
+
       return;
     }
     const param = {};

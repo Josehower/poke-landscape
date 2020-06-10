@@ -53,4 +53,10 @@ function changeSex(e) {
   }
 }
 
-export { rotatePokemon, changeColor, changeSex };
+function bye(e) {
+  if (e.target.classList[0] === 'bye') {
+    e.target.parentElement.style.display = 'none';
+  }
+}
+
+export { rotatePokemon, changeColor, changeSex, bye };

@@ -1,6 +1,14 @@
-import { canvas, btn, body } from './Selectors';
-import { rotatePokemon, changeColor, changeSex } from './pokeDomManipulation';
+import { landscape, btn, body } from './Selectors';
+
+import {
+  rotatePokemon,
+  changeColor,
+  changeSex,
+  bye,
+} from './pokeDomManipulation';
+
 import { printPokemon } from './pokePrinter';
+
 import {
   dragOver,
   dragEnter,
@@ -21,9 +29,9 @@ function addPokemonListeners(dragables) {
 }
 
 function init() {
-  canvas.addEventListener('dragover', dragOver);
-  canvas.addEventListener('dragenter', dragEnter);
-  canvas.addEventListener('drop', onDrop);
+  landscape.addEventListener('dragover', dragOver);
+  landscape.addEventListener('dragenter', dragEnter);
+  landscape.addEventListener('drop', onDrop);
 
   btn.addEventListener('click', () => {
     printPokemon().then(dragables => {
@@ -34,6 +42,7 @@ function init() {
   body.addEventListener('click', rotatePokemon);
   body.addEventListener('click', changeColor);
   body.addEventListener('click', changeSex);
+  body.addEventListener('click', bye);
 }
 
 export { init };
