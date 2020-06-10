@@ -137,6 +137,7 @@ body{
     background-color: rgba(250, 90, 90, 0);
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .accion::before{
@@ -147,6 +148,15 @@ body{
     left: 200px;
     width: 100%;
     height: 100%;
+
+}
+
+.accion:hover{
+    background: linear-gradient(90deg,
+        rgb(67, 99, 151) 0%,
+        rgb(13, 129, 116) 35%,
+        rgb(0, 166, 199) 100%);
+        box-shadow: rgba(0, 0, 0, 0.5) 2px 2px;
 
 }
 
