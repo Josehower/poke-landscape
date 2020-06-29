@@ -32,9 +32,7 @@ function mouseUp(e) {
       : obj.style.left;
 
   obj.style.top =
-    e.clientY - objOffset.y < bigRect.top 
-      ? `${bigRect.top}px` 
-      : obj.style.top;
+    e.clientY - objOffset.y < bigRect.top ? `${bigRect.top}px` : obj.style.top;
 
   obj.style.top =
     objRect.bottom > bigRect.bottom

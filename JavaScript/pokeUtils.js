@@ -1,12 +1,12 @@
-import { bench } from './pokeBenchState.js';
+import { bench } from './pokeBenchState';
 // recieve a name or id of a pokemon already catched and returns his benchState
 
-function pokemonById(pokemonId) {
-  const pokemonName = Object.entries(bench).filter(
-    ([name, { id }]) => id === pokemonId || name === pokemonId
+function getPokemonBluePrintReference(pokemonIdOrName) {
+  const pokemonName = Object.entries(bench.bluePrint).filter(
+    ([name, { id }]) => id === pokemonIdOrName || name === pokemonIdOrName
   )[0][0];
 
-  return bench[pokemonName];
+  return bench.bluePrint[pokemonName];
 }
 
 function getRandomPokemonNumber() {
@@ -14,4 +14,4 @@ function getRandomPokemonNumber() {
   return randomPokemonId;
 }
 
-export { pokemonById, getRandomPokemonNumber };
+export { getPokemonBluePrintReference, getRandomPokemonNumber };

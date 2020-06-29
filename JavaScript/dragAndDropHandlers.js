@@ -16,7 +16,7 @@ function dragEnter(e) {
 function onDrop(e) {
   const pokemonDropped = document.querySelector('.taken');
   this.append(pokemonDropped);
-  console.log(`${pokemonDropped.classList[0]} i choose you!`);
+  console.log(`${pokemonDropped.classList[1]} i choose you!`);
   pokemonInside(pokemonDropped);
 }
 

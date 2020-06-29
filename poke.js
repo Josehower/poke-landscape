@@ -1,3 +1,3 @@
-import { init } from './JavaScript/eventListeners';
+import { init } from './JavaScript/eventListenersInitializer';
 
 init();

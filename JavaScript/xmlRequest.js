@@ -1,4 +1,4 @@
-export function getPokemon(pokemonId) {
+export function getPokemonFromApi(pokemonId) {
   return new Promise(resolve => {
     const xml = new XMLHttpRequest();
     xml.onload = ({ currentTarget: { response: pokemon } }) => {
