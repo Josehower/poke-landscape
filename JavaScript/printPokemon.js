@@ -49,10 +49,34 @@ async function createPokemonBlueprint(pokemonIdOrName) {
 }
 
 function addPokemonDivListeners(div) {
-  div.addEventListener('dragstart', dragStart);
-  div.addEventListener('dragend', dragEnd);
-  div.addEventListener('mouseenter', mouseIn);
-  div.addEventListener('mouseleave', mouseOut);
+  div.
+  
+  
+  
+  
+  
+  ('dragstart', dragStart);
+  div.
+  
+  
+  
+  
+  
+  ('dragend', dragEnd);
+  div.
+  
+  
+  
+  
+  
+  ('mouseenter', mouseIn);
+  div.
+  
+  
+  
+  
+  
+  ('mouseleave', mouseOut);
 }
 
 async function printPokemon(pokemonId) {
