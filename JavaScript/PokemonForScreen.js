@@ -1,6 +1,7 @@
 import PokemonBluePrint from './PokemonBluePrint';
 import { imagesSvg } from './Selectors';
 import { bench } from './pokeBenchState';
+import textToBlackDiv from './pokeInfoText';
 
 export default class PokemonForScreen extends PokemonBluePrint {
   constructor(pokemon, uniqueId) {
@@ -8,6 +9,7 @@ export default class PokemonForScreen extends PokemonBluePrint {
     this.uniqueId = uniqueId;
     this.state = {
       isPrinted: false,
+      logFunction: textToBlackDiv,
     };
   }
 
@@ -108,6 +110,9 @@ export default class PokemonForScreen extends PokemonBluePrint {
       this.actualSprite
     );
     this.updateSprite(newSprite);
+    this.state.logFunction(
+      `<strong>${this.name}</strong> switch into a new <strong>color</strong>`
+    );
   }
 
   switchSex() {
@@ -116,6 +121,9 @@ export default class PokemonForScreen extends PokemonBluePrint {
       'sex'
     );
     this.updateSprite(newSprite);
+    this.state.logFunction(
+      `<strong>${this.name}</strong> switch into a new <strong>variation</strong>`
+    );
   }
 
   rotate() {
@@ -128,5 +136,6 @@ export default class PokemonForScreen extends PokemonBluePrint {
     };
 
     this.updateSprite(Options[actualPosition]());
+    this.state.logFunction(`<strong>${this.name}<strong> rotate</strong> now!`);
   }
 }

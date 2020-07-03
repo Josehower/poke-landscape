@@ -8,4 +8,16 @@ const landscape = document.querySelector('.landscapeContainer');
 
 const imagesSvg = require('../images/buttons/*.svg');
 
-export { CajaSeleccionaPokemon, btn, landscape, body, imagesSvg };
+const blackDiv = document.querySelector('#infoTextContainer');
+
+const searchPokemon = document.querySelector('#buscarPokemon');
+
+export {
+  CajaSeleccionaPokemon,
+  btn,
+  landscape,
+  body,
+  imagesSvg,
+  blackDiv,
+  searchPokemon,
+};

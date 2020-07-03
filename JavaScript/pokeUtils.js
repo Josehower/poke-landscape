@@ -2,6 +2,14 @@ import { bench } from './pokeBenchState';
 // recieve a name or id of a pokemon already catched and returns his benchState
 
 function getPokemonBluePrintReference(pokemonIdOrName) {
+  if (
+    !Object.entries(bench.bluePrint).filter(
+      ([name, { id }]) => id === pokemonIdOrName || name === pokemonIdOrName
+    )[0]
+  ) {
+    return;
+  }
+
   const pokemonName = Object.entries(bench.bluePrint).filter(
     ([name, { id }]) => id === pokemonIdOrName || name === pokemonIdOrName
   )[0][0];

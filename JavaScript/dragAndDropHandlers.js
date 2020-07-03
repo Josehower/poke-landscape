@@ -1,4 +1,5 @@
 import { pokemonInside } from './Landscape/insideLandscapeHandlers';
+import textToBlackDiv from './pokeInfoText';
 
 function dragStart(e) {
   e.currentTarget.classList.add('taken');
@@ -16,7 +17,9 @@ function dragEnter(e) {
 function onDrop(e) {
   const pokemonDropped = document.querySelector('.taken');
   this.append(pokemonDropped);
-  console.log(`${pokemonDropped.classList[1]} i choose you!`);
+  textToBlackDiv(
+    `<strong>${pokemonDropped.classList[1]}</strong> i choose you!`
+  );
   pokemonInside(pokemonDropped);
 }
 
