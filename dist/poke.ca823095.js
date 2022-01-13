@@ -125,10 +125,10 @@ module.exports = "/002-lucha.730c41b6.svg";
 module.exports = "/003-brujula.bef1a417.svg";
 },{}],"images/buttons/004-pokemon.svg":[function(require,module,exports) {
 module.exports = "/004-pokemon.009c4f7a.svg";
-},{}],"images/buttons/005-pokemon-1.svg":[function(require,module,exports) {
-module.exports = "/005-pokemon-1.82089429.svg";
 },{}],"images/buttons/006-camara.svg":[function(require,module,exports) {
 module.exports = "/006-camara.6f650c32.svg";
+},{}],"images/buttons/005-pokemon-1.svg":[function(require,module,exports) {
+module.exports = "/005-pokemon-1.82089429.svg";
 },{}],"images/buttons/007-pokemon-2.svg":[function(require,module,exports) {
 module.exports = "/007-pokemon-2.736b3bc0.svg";
 },{}],"images/buttons/008-tacho-de-reciclaje.svg":[function(require,module,exports) {
@@ -143,14 +143,14 @@ module.exports = {
   "002-lucha": require("./002-lucha.svg"),
   "003-brujula": require("./003-brujula.svg"),
   "004-pokemon": require("./004-pokemon.svg"),
-  "005-pokemon-1": require("./005-pokemon-1.svg"),
   "006-camara": require("./006-camara.svg"),
+  "005-pokemon-1": require("./005-pokemon-1.svg"),
   "007-pokemon-2": require("./007-pokemon-2.svg"),
   "008-tacho-de-reciclaje": require("./008-tacho-de-reciclaje.svg"),
   "buscar": require("./buscar.svg"),
   "pokemon": require("./pokemon.svg")
 };
-},{"./001-pokedex.svg":"images/buttons/001-pokedex.svg","./002-lucha.svg":"images/buttons/002-lucha.svg","./003-brujula.svg":"images/buttons/003-brujula.svg","./004-pokemon.svg":"images/buttons/004-pokemon.svg","./005-pokemon-1.svg":"images/buttons/005-pokemon-1.svg","./006-camara.svg":"images/buttons/006-camara.svg","./007-pokemon-2.svg":"images/buttons/007-pokemon-2.svg","./008-tacho-de-reciclaje.svg":"images/buttons/008-tacho-de-reciclaje.svg","./buscar.svg":"images/buttons/buscar.svg","./pokemon.svg":"images/buttons/pokemon.svg"}],"JavaScript/Selectors.js":[function(require,module,exports) {
+},{"./001-pokedex.svg":"images/buttons/001-pokedex.svg","./002-lucha.svg":"images/buttons/002-lucha.svg","./003-brujula.svg":"images/buttons/003-brujula.svg","./004-pokemon.svg":"images/buttons/004-pokemon.svg","./006-camara.svg":"images/buttons/006-camara.svg","./005-pokemon-1.svg":"images/buttons/005-pokemon-1.svg","./007-pokemon-2.svg":"images/buttons/007-pokemon-2.svg","./008-tacho-de-reciclaje.svg":"images/buttons/008-tacho-de-reciclaje.svg","./buscar.svg":"images/buttons/buscar.svg","./pokemon.svg":"images/buttons/pokemon.svg"}],"JavaScript/Selectors.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -720,7 +720,7 @@ function init() {
 var _eventListenersInitializer = require("./JavaScript/eventListenersInitializer");
 
 (0, _eventListenersInitializer.init)();
-},{"./JavaScript/eventListenersInitializer":"JavaScript/eventListenersInitializer.js"}],"../../../../../../../../home/heggart/.nvm/versions/node/v12.16.2/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./JavaScript/eventListenersInitializer":"JavaScript/eventListenersInitializer.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -748,7 +748,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60409" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51222" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -924,5 +924,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../../../home/heggart/.nvm/versions/node/v12.16.2/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","poke.js"], null)
+},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","poke.js"], null)
 //# sourceMappingURL=/poke.ca823095.js.map
