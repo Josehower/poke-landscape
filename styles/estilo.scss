@@ -22,17 +22,17 @@ body{
 }
 
 .pokemon:hover {
-    background-blend-mode: luminosity; 
+    background-blend-mode: luminosity;
     background-position: center;
     background-size: cover;
-    border-radius: 50%;   
+    border-radius: 50%;
     box-shadow: rgba(201, 31, 1, 0.61) 2px 2px, rgb(201, 31, 1, 0.61) -2px -2px;
     background-color: rgba(73, 65, 64, 0.61);
-     
+
 }
 
 #nav {
-    
+
     width: 90%;
     margin: 10px auto;
     display: grid;
@@ -116,7 +116,7 @@ body{
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: end;
-    
+
 
     img {
         position: relative;
@@ -136,7 +136,7 @@ body{
         border-radius: 50%;
         width: 3rem;
         height: 3rem;
-        
+
     }
 
     button:hover {
@@ -150,14 +150,14 @@ body{
 
 
     .bye{
-        
+
         justify-self: right;
         align-self: start;
         z-index: 4;
 
     }
     .rotate{
-        
+
         justify-self: right;
         z-index: 4;
 
@@ -174,7 +174,7 @@ body{
         z-index: 4;
 
     }
-    
+
 }
 
 .head {
@@ -187,21 +187,21 @@ body{
     border: 2px solid black;
     height: 180px;
     margin: 10px 10px 10px 100px;
-    
+
 
     Button{
         position: absolute;
         top: calc(50% - 90px);
         left: -90px;
         width: 180px;
-                
+
     }
     Button:active {
      transform: scale(0.9);
      box-shadow: rgba(0, 0, 0, 0.493) -3px 2px,  rgba(0, 0, 0, 0.493) 3px -2px ;
-    
+
     }
-        
+
 }
 
 .accion{
@@ -217,7 +217,7 @@ body{
     content: "";
     position: absolute;
     //background-color: black;
-    top: 0; 
+    top: 0;
     left: 200px;
     width: 100%;
     height: 100%;
@@ -244,7 +244,7 @@ body{
     padding: 8px;
     grid-row: 1/-1;
     overflow: hidden;
-    
+
     button {
        display : none;
     }
@@ -258,9 +258,8 @@ body{
     width: 90vw;
     height: 70vh;
     border: solid rgb(0, 0, 0);
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/37b99214-e613-4919-8d5f-d1bc2deaf992/dax05hn-3686e180-8ea7-4982-9aa2-7b35250f8c9e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzdiOTkyMTQtZTYxMy00OTE5LThkNWYtZDFiYzJkZWFmOTkyXC9kYXgwNWhuLTM2ODZlMTgwLThlYTctNDk4Mi05YWEyLTdiMzUyNTBmOGM5ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.oeQDTh0U5qJps9ysi7_6E7bnkvuiXTz1Nk6XpLDevVg);
     //background-image: url(https://i.redd.it/hicwzlb23pm21.png);
-    //background-image: url(https://i.pinimg.com/originals/42/4a/d6/424ad6a3cf762c0c909bdd8385c9e5e6.jpg);
+    background-image: url(https://i.pinimg.com/originals/42/4a/d6/424ad6a3cf762c0c909bdd8385c9e5e6.jpg);
     //background-image: url(https://i.imgur.com/Z3ldLGv.jpeg);
     background-position: center;
     background-size: cover;
@@ -282,22 +281,22 @@ body{
     .pokemon:hover::before {
         content: "";
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width: 100%; 
-        height: 100%;  
-        opacity: .7; 
+        width: 100%;
+        height: 100%;
+        opacity: .7;
         z-index: -1;
         background-color: rgba(12, 6, 6, 0.479);
         background: url("../images/unnamed.png");
-        background-blend-mode: luminosity; 
+        background-blend-mode: luminosity;
         background-position: center;
         background-size: cover;
         pointer-events: none;
         animation: rotation 0.9s infinite alternate;
-       
+
       }
-    
+
     .pokemon{
         width: 150px;
         //el tamano puede ser cambiado entre 130 o 300px de manera optima
@@ -328,6 +327,5 @@ body{
     margin: 10px auto;
     background-color: rgba(0, 0, 0, 0.267);
     border-radius: 10px;
-    
-}
 
+}
